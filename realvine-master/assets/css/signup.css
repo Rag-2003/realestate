@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #6a62d2;
+  background: #2aca5c;
 }
 
 .login-page {
@@ -59,7 +59,7 @@ span {
 
 .form button {
   outline: 0;
-  background: #6a62d2;
+  background: #035b21;
   width: 100%;
   border: 0;
   margin-top: 10px;
@@ -86,7 +86,7 @@ span {
 
 .form .message a {
   font-size: 14px;
-  color: #6a62d2;
+  color: #07651b;
   text-decoration: none;
 }
 
