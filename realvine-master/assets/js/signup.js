@@ -1,15 +1,21 @@
-const form = document.querySelector('form');
+function formvalid() {
+  var vaildpass = document.getElementById("pass").value;
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
+  if (vaildpass.length <= 8 || vaildpass.length >= 20) {
+    document.getElementById("vaild-pass").innerHTML = "";
+    return false;
+  } else {
+    document.getElementById("vaild-pass").innerHTML = "";
+  }
+}
 
-  const username = form.querySelector('input[name="username"]').value;
-  const email = form.querySelector('input[name="email"]').value;
-  const password = form.querySelector('input[name="password"]').value;
-
-  // TODO: Validate the input
-
-  // TODO: Send the data to the server
-
-  // TODO: Redirect the user to the home page
-});
+function show() {
+  var x = document.getElementById("pass");
+  if (x.type === "password") {
+    x.type = "text";
+    document.getElementById("showimg").src ="https://static.thenounproject.com/png/777494-200.png";
+  } else {
+    x.type = "password";
+    document.getElementById("showimg").src = "https://cdn2.iconfinder.com/data/icons/basic-ui-interface-v-2/32/hide-512.png";
+  }
+}
