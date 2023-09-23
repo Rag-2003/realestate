@@ -3,15 +3,14 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 codewithsadee
+ *
  */
 
-
-
+ 
 
 
 /*-----------------------------------*\
-  #CUSTOM PROPERTY
+  #
 \*-----------------------------------*/
 
 :root {
@@ -1141,5 +1140,11 @@ body {
 
   .about .section-text { max-width: unset; }
   
-
+  .logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
 }
